@@ -19,6 +19,15 @@ cholla-tests-data as the "submodule" so that the discussion is more general.
 - [Git LFS Tutorial](https://www.atlassian.com/git/tutorials/git-lfs)
 - [Git Submodules Tutorial](https://www.atlassian.com/git/tutorials/git-submodule)
 
+### Git LFS Notes
+
+Git LFS works by only downloading LFS files when they're checked out, so when
+you clone you only get the current version of those files rather than their
+entire histories.
+
+Note that git garbage collection is not automatically run on LFS files. If you
+wish to run garbaga collection for old LFS files run `git lfs prune`
+
 ### Cloning
 
 ```bash
