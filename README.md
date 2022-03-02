@@ -66,6 +66,10 @@ $ git submodule update
 $ cd cholla/cholla-tests-data
 $ git checkout *branch-name*
 
+# If you want to push/pull with SSH rather than HTTPS and a PAT (Personal Access
+# Token) you will need to set the URL
+$ git remote set-url origin git@github.com:cholla-hydro/cholla-tests-data.git
+
 # In the submodule directory make your changes, commit, and push them just as
 # you would normally
 $ git add *files*
